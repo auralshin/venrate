@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Droplet
+Ceramic and ipfs private node deployed at https://ceramic.auralshin.tech and https://ipfs.auralshin.tech 
+change localhost links with these
