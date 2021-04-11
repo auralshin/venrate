@@ -1,0 +1,24 @@
+{
+  "definitions":
+  {
+    "healthRecord":"kjzl6cwe1jw146urifvo0c8938fts120i6vebcf7qy8a5474pg2d26qo5blou4j"
+    },
+    "schemas":
+    {
+      "HealthRecord":"ceramic://k3y52l7qbv1fryffphfxapz8ynrjm4zh4nd7c3abp1menyg44xiszyxlz4fvw08hs",
+      "HealthRecordList":"ceramic://k3y52l7qbv1frxrxdxs7e0h0rhmc1baqscbanuyjb7gk0y4dphowv45pfh304jls0"
+    },
+
+    
+    "oldDefs" :{
+      "definitions2":
+      {
+        "healthRecord":"kjzl6cwe1jw147lwuw6iignxbubvr7ch3qwq19kp2v14mnr73spfztgyue0q6dq"
+      },
+        "schemas":
+        {
+          "HealthRecord":"ceramic://k3y52l7qbv1fry47extim7q7215ev78k2dtw4x1bev80dm4f2wecmuqs0m57zm6m8",
+          "HealthRecordList":"ceramic://k3y52l7qbv1fry4jv6zxi1chsi7zfd96uokglw4fzhzflaw9ql8rz6uerbl3r16o0"
+        }
+    }
+}
