@@ -10,9 +10,9 @@
   "dependencies": {
     "3id-connect": "^1.0.0-alpha.15",
     "@ceramicnetwork/http-client": "^0.10.2",
+    "buefy": "^0.9.6",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vuesax": "^3.12.2"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
