@@ -9,6 +9,9 @@ import 'buefy/dist/buefy.css'
 
 import Home from './Dashboard.vue'
 import Login from './Login.vue'
+import Profile from './Profile'
+import Edit from './components/updateCard'
+import Record from './Record'
 Vue.use(Vuex)
 Vue.use(Buefy)
 Vue.config.productionTip = false
@@ -24,7 +27,22 @@ const routes = [
       path: '/home',
       component: Home,
       
-  }
+  },
+  {
+    path: '/profile',
+    component: Profile,
+    
+},
+{
+  path: '/edit',
+  component: Edit,
+  
+},
+{
+  path: '/create',
+  component: Record,
+  
+}
 ]
 
 const router = new VueRouter({

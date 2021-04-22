@@ -23,7 +23,12 @@
               </router-link>
             </div>
             <div class="navbar-item">
-            <router-link :to="{ path: 'home' }" class="button is-info">
+              <router-link :to="{ path: 'create' }" class="button is-info">
+                Create
+              </router-link>
+            </div>
+            <div class="navbar-item">
+            <router-link :to="{ path: 'profile' }" class="button is-info">
               Profiles
             </router-link>
             </div>
@@ -98,11 +103,11 @@ export default {
 data() {
             return {
                 data: [
-                    { 'id': 1, 'title': 'Jesse', 'date': '2016-10-15 13:43:27', },
-                    { 'id': 2, 'title': 'John', 'date': '2016-12-15 06:00:53', },
-                    { 'id': 3, 'title': 'Tina', 'date': '2016-04-26 06:26:28',  },
-                    { 'id': 4, 'title': 'Clarence', 'date': '2016-04-10 10:28:46', },
-                    { 'id': 5, 'title': 'Anne', 'date': '2016-12-06 14:38:38', }
+                    { 'id': 1, 'title': 'Jesse', 'docId': '2016-10-15 13:43:27', },
+                    { 'id': 2, 'title': 'John', 'docId': '2016-12-15 06:00:53', },
+                    { 'id': 3, 'title': 'Tina', 'docId': '2016-04-26 06:26:28',  },
+                    { 'id': 4, 'title': 'Clarence', 'docId': '2016-04-10 10:28:46', },
+                    { 'id': 5, 'title': 'Anne', 'docId': '2016-12-06 14:38:38', }
                 ],
                 columns: [
                     {
@@ -117,8 +122,8 @@ data() {
                     },
                    
                     {
-                        field: 'date',
-                        label: 'Date',
+                        field: 'docId',
+                        label: 'Doc ID',
                         centered: true
                     },
                     
