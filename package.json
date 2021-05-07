@@ -9,8 +9,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "3id-connect": "^1.0.0-alpha.15",
+    "@ceramicnetwork/http-client": "^1.0.0",
+    "@ceramicstudio/idx": "^0.11.0",
     "core-js": "^3.9.1",
     "docsify-cli": "^4.4.3",
+    "ipfs-http-client": "^49.0.4",
     "nuxt": "^2.15.3"
   },
   "devDependencies": {}

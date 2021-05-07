@@ -47,29 +47,20 @@ Now as mentioned earlier the three components of reputation based economy are
 
 ## Project Structure
     .
+    ├── .nuxt                   # nuxt config files
+    ├── assets                  # Assets ( Image, Logo, etc) 
+    ├── components              # Components for pages 
     ├── build                   # Compiled files (alternatively `dist`)
     ├── docs                    # Documentation files (alternatively `doc`)
-    ├── public
+    ├── public                  # Contains main index.html files
+    ├── layout                  # default layout (navbar and footer)
+    ├── middleware              # middleware for auth
+    ├── plugins                 # custom plugins
+    ├── static                  # static pages for pulling static data
+    ├── store                   # State management by vuex
     ├── src                     # Source files (alternatively `lib` or `app`)             
     ├── LICENSE
     └── README.md
- 
-### Tabs
-<!-- tabs:start -->
-
-#### **English**
-
-Hello!
-
-#### **French**
-
-Bonjour!
-
-#### **Italian**
-
-Ciao!
-
-<!-- tabs:end -->
 
 ## Project setup
 ```
