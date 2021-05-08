@@ -127,7 +127,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 # Screens
 
 ![](https://github.com/auralshin/venrate/blob/5a0849733c167f429df572eb0d1dea180426dbf1/docs/index.PNG)
-<img src="./dash.gif">  
+![](https://github.com/auralshin/venrate/blob/5a0849733c167f429df572eb0d1dea180426dbf1/docs/dash.gif) 
 ![](https://github.com/auralshin/venrate/blob/5a0849733c167f429df572eb0d1dea180426dbf1/docs/profile.PNG)
- <img src="./edit.png" >  
- <img src="./dispute.png" >  
+![](https://github.com/auralshin/venrate/blob/5a0849733c167f429df572eb0d1dea180426dbf1/docs/edit.PNG) 
+![](https://github.com/auralshin/venrate/blob/5a0849733c167f429df572eb0d1dea180426dbf1/docs/dispute.PNG) 
