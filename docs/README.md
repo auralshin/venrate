@@ -126,7 +126,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 # Screens
 
-<img src="./index.png">  
+![]("https://github.com/auralshin/venrate/blob/5a0849733c167f429df572eb0d1dea180426dbf1/docs/index.PNG")
 <img src="./dash.gif">  
  <img src="./profile.png" >  
  <img src="./edit.png" >  
