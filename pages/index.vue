@@ -7,30 +7,43 @@
       </h1>
       <div class="gcontainer links">
         <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://auralshin.me/venrate/"
+         
+     
           class="gcontainer button--green"
         >
           Documentation
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://github.com/auralshin/venrate"
+         
+     
           class="gcontainer button--green"
         >
           GitHub
         </a> 
        
       </div>
-       <div class="gcontainer"><button class="button-two"><span>Connect Wallet</span></button></div>
+       <div class="gcontainer"><button @click="auth" class="button-two"><span>Connect Wallet</span></button></div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+   async auth() {
+     this.$store.commit('initialiseStore')
+     this.$store
+      .dispatch("ceramicAuth")
+      .then((Boolean) => {
+        if(Boolean) {
+          this.$router.push({path: '/dashboard'})
+        }
+      })
+   } 
+  }
+}
 </script>
 
 <style scoped>

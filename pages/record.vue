@@ -14,11 +14,11 @@
     </div>
   
     <div class="nav-links">
-      <a href="" target="_blank">Github</a>
-      <a href="" target="_blank">Documentation</a>
-      <a href="" target="_blank">Record</a>
-      <a href="" target="_blank">Profile</a>
-      <a href="" target="_blank">LogOut</a>
+      <a href="https://github.com/auralshin/venrate" >Github</a>
+      <a href="https://auralshin.me/venrate/">Documentation</a>
+            <a href="/record" >Verify</a>
+      <a href="/profile">Profile</a>
+      <button><a href="" target="_blank">LogOut</a></button>
     </div>
   </div>
 
@@ -28,16 +28,18 @@
           <div class="screen-body">
             <div class="screen-body-item left">
               <div class="app-title">
-                <span>NEW</span>
-                <span>RECORD</span>
+                <span>Dispute</span>
+                <span>Resolution</span>
               </div>
 
               <div class="app-contact">Powered By Venrate</div>
             </div>
             <div class="screen-body-item">
+                
               <div class="img-circle">
                <LogoNav/>
               </div>
+              
               <div class="app-form">
                 <div class="app-form-group message">
                   <input
@@ -83,9 +85,9 @@
                 </div>
                 
                 <div class="app-form-group buttons">
-                  <vs-button size="large" @click="newRecord">
-                    Submit
-                  </vs-button>
+                  <button class="button-two" @click="newRecord">
+                    <span>Submit</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -97,6 +99,41 @@
 </template>
 
 <style scoped>
+.button-two {
+  border-radius: 4px;
+  background-color:#d35400;
+  color: aliceblue;
+  border: none;
+  padding: 15px;
+  width: 180px;
+  transition: all 0.5s;
+}
+
+
+.button-two span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-two span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button-two:hover span {
+  padding-right: 25px;
+}
+
+.button-two:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 h1 {
   font-weight: normal;
   font-size: 4em;

@@ -1,9 +1,25 @@
 import CeramicClient from '@ceramicnetwork/http-client'
 import { ThreeIdConnect,  EthereumAuthProvider } from '3id-connect'
-const API_URL = "https://ceramic-clay.3boxlabs.com"
+const API_URL = "https://gateway-clay.ceramic.network"
 const ceramic = new CeramicClient(API_URL)
+
+import { Ed25519Provider } from 'key-did-provider-ed25519'
+import ThreeIdResolver from '@ceramicnetwork/3id-did-resolver';
+import KeyDidResolver from 'key-did-resolver';
+import { Resolver } from 'did-resolver';
+import { DID } from 'dids';
 import { IDX } from "@ceramicstudio/idx";
 import { definitions } from './config.json'
+
+const resolver = new Resolver({
+    ...KeyDidResolver.getResolver(),
+    ...ThreeIdResolver.getResolver() })
+    // const privateKey = this.configService.get('Private_Key').substr(2)
+    // const privateKeyArray = this.toUnit8Array(privateKey,'hex')
+    // const seed = new Uint8Array([])
+
+    // const provider = new Ed25519Provider(seed)
+    const did = new DID({ resolver })
 
 export const state = () => ({
     authenticated: false,
@@ -84,18 +100,21 @@ export const getters = {
 
 export const actions = {
     async ceramicAuth({commit}) {
-       const addresses = await window.ethereum.enable()
-       const threeIdConnect = new ThreeIdConnect()
+        await ceramic.setDID(did)
+        const addresses = await window.ethereum.enable()
+        const threeIdConnect = new ThreeIdConnect()
                
-               const authProvider = new EthereumAuthProvider(window.ethereum, addresses[0])
-               await threeIdConnect.connect(authProvider)
-               const provider = await threeIdConnect.getDidProvider()
-               console.log(provider)
-               await ceramic.setDIDProvider(provider)
-                 console.log("set")
-               const ethaddress = addresses[0]
-               console.log(ceramic.did.id)
-               const idx = new IDX({ ceramic, aliases: definitions })
+        const authProvider = new EthereumAuthProvider(window.ethereum, addresses[0])
+        await threeIdConnect.connect(authProvider)
+        const provider = await threeIdConnect.getDidProvider()
+        ceramic.did.setProvider(provider)
+        console.log(provider)
+        var res = await ceramic.did.authenticate()
+        console.log(res);
+        console.log("set")
+        const ethaddress = addresses[0]
+        console.log(ceramic.did.id)
+        const idx = new IDX({ ceramic, aliases: definitions })
    console.log("idx")
    if (idx.authenticated) {
        console.log("authenticated IDX!!");

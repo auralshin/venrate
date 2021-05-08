@@ -13,12 +13,12 @@
       </label>
     </div>
   
-    <div class="nav-links">
-      <a href="" target="_blank">Github</a>
-      <a href="" target="_blank">Documentation</a>
-      <a href="" target="_blank">Record</a>
-      <a href="" target="_blank">Profile</a>
-      <a href="" target="_blank">LogOut</a>
+     <div class="nav-links">
+      <a href="https://github.com/auralshin/venrate" >Github</a>
+      <a href="https://auralshin.me/venrate/">Documentation</a>
+      <a href="/record" >Record</a>
+      <a href="/profile">Profile</a>
+      <button class="" ><a href="" target="_blank">LogOut</a></button>
     </div>
   </div>
   <div class="card-container">
@@ -45,8 +45,12 @@
         <div class="profile-buttons">
           <router-link :to="{ path: 'edit' }"><button class="neumorphic-button">Edit</button></router-link>
           <button class="neumorphic-button">Share</button>
-          <button class="neumorphic-button">Get Score</button>
         </div>
+        <div class="score">
+          <button @click="get_score" class="neumorphic-button">Get Score</button>
+          <div>Here's Your Score : {{ r }}</div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -55,6 +59,19 @@
 
 <script>
 export default {
+  data() {
+    return {
+      r : 0
+    }
+  },
+  methods: { 
+    get_score() {
+      this.r = this.generateNumber()
+    },
+    generateNumber: function () {
+      return Math.floor(Math.random()*(10 - 4 + 1)+ 4);
+    }
+  }
 }
 </script>
 
@@ -66,8 +83,14 @@ export default {
   justify-content: center;
   padding-top:100px ;
 }
+.score {
+  padding: 30px 0 0 0;
+  display: flex;
+  align-items:center ;
+  color: whitesmoke;
+}
 .neumorphic-card {
-  height: 50vh;
+  height: 60vh;
   width: 60vh;
   border-radius: 15px;
   text-align: center;

@@ -13,12 +13,12 @@
       </label>
     </div>
   
-    <div class="nav-links">
-      <a href="" target="_blank">Github</a>
-      <a href="" target="_blank">Documentation</a>
-      <a href="" target="_blank">Record</a>
-      <a href="" target="_blank">Profile</a>
-      <a href="" target="_blank">LogOut</a>
+     <div class="nav-links">
+      <a href="https://github.com/auralshin/venrate" >Github</a>
+      <a href="https://auralshin.me/venrate/">Documentation</a>
+      <a href="/record" >Record</a>
+      <a href="/profile">Profile</a>
+      <button><a href="" target="_blank">LogOut</a></button>
     </div>
  </div>
  <div class="background">
@@ -38,6 +38,22 @@
                <LogoNav/>
               </div>
               <div class="app-form">
+                  <div class="columns gcontainer">
+                  <div class="profile-image column" >
+                    <template v-if="preview">
+                        <img :src="preview" class="neumorphic-card-photo"/>
+                        
+                    </template>
+                  </div>
+                  
+                      <div class="input-group column">
+                      <input class="input-group__input" type="file" accept="image/*" @change="previewImage" required>
+                      <template v-if="preview">
+                          <p class="mb-0 ml-4 mt-4">file name: {{ image.name }}</p>
+              <p class="mb-0 ml-4 ">size: {{ image.size/1024 }}KB</p>
+                      </template>
+                                    </div>
+                  </div>
                 <div class="app-form-group message">
                   <input
                     class="app-form-control"

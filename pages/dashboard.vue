@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="dash-bg">
   <div class="nav">
     <input type="checkbox" id="nav-check">
     <div class="nav-header">
@@ -14,11 +14,11 @@
     </div>
   
     <div class="nav-links">
-      <a href="" target="_blank">Github</a>
-      <a href="" target="_blank">Documentation</a>
-      <a href="" target="_blank">Record</a>
-      <a href="" target="_blank">Profile</a>
-      <a href="" target="_blank">LogOut</a>
+      <a href="https://github.com/auralshin/venrate" >Github</a>
+      <a href="https://auralshin.me/venrate/">Documentation</a>
+      <a href="/record" >Verify</a>
+      <a href="/profile">Profile</a>
+      <button><a href="" target="_blank">LogOut</a></button>
     </div>
   </div>
   <div class="title text-gradient">Venrate</div>
@@ -29,7 +29,7 @@
 <div class="card 1">
   <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
   <div class="card_title title-white">
-    <p>Card Title</p>
+    <p>DID : </p>
   </div>
 </div>
 
@@ -38,7 +38,7 @@
     <img src="https://www.adobe.com/content/dam/cc/us/en/tools/cq5dam.mobile_640.640.357.jpg.img.jpg" />
     </div>
   <div class="card_title text-black">
-    <p>Card Title</p>
+    <p>EthAddress : </p>
   </div>
 </div>
 </div>
@@ -115,6 +115,12 @@ computed: {
   padding-bottom: 20px;
   font-size: 80px;
   font-weight: bolder;
+}
+.dash-bg {
+  height: 130vh;
+   background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
 }
 .table__wrap {
   padding: 50px 15px 0 15px;
