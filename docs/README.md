@@ -129,5 +129,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 <img src="./login.gif">
 <img src="./dash.gif">
 <img src="./profile.gif">
-![dispute](https://user-images.githubusercontent.com/41705919/117526514-585f2700-afe3-11eb-9c90-eebc973d99d8.PNG)
+<img src="https://user-images.githubusercontent.com/41705919/117526514-585f2700-afe3-11eb-9c90-eebc973d99d8.PNG"></img>
 
