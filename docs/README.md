@@ -129,4 +129,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 <img src="./login.gif">
 <img src="./dash.gif">
 <img src="./profile.gif">
-![](https://github.com/auralshin/venrate/blob/5a0849733c167f429df572eb0d1dea180426dbf1/docs/dispute.PNG) 
+<img src="https://github.com/auralshin/venrate/blob/5a0849733c167f429df572eb0d1dea180426dbf1/docs/dispute.PNG"> 
