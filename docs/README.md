@@ -45,6 +45,11 @@ Now as mentioned earlier the three components of reputation based economy are
 >In *`Venrate`* you can create record provided with document proof if there's any dispute.
 ---
 
+# Use Case
+Decentralized finance protocols paired with blockchain-based identity systems are an opportunity to help previously locked-out users access a truly global economic system. DeFi solutions can reduce the collateralization requirements for people who do not have extra funds and help assess users’ creditworthiness via attributes around reputation and financial activity, instead of traditional data points such as home ownership and income. The DeFi space prizes data privacy around personal identifying information, as well as open access. Anyone with an Internet connection can access DeFi applications while maintaining control of their data and assets. 
+
+---
+
 ## Project Structure
     .
     ├── .nuxt                   # nuxt config files
@@ -123,6 +128,8 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
 
 # Screens
 
