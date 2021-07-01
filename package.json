@@ -9,9 +9,14 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@3id/connect": "^0.1.6",
+    "@ceramicnetwork/3id-did-resolver": "^1.2.7",
+    "@ceramicnetwork/http-client": "^1.0.7",
     "@nuxtjs/apollo": "^4.0.1-rc.5",
     "core-js": "^3.9.1",
+    "dids": "^2.2.0",
     "graphql-tag": "^2.12.4",
+    "key-did-resolver": "^1.2.1",
     "nuxt": "^2.15.3"
   },
   "devDependencies": {

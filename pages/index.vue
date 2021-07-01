@@ -84,9 +84,9 @@
                 </v-icon>
               </v-btn>
             </div>
-            <div class="button">
+            <v-btn class="button" @click="auth">
               <Button />
-            </div>
+            </v-btn>
           </v-card>
         </div>
       </v-col>
@@ -103,7 +103,19 @@ export default {
     Logo,
     VuetifyLogo,
     Button
-  }
+  },
+  methods: {
+    async auth() {
+     this.$store.commit('initialiseStore')
+     this.$store
+      .dispatch("ceramicAuth")
+      .then((Boolean) => {
+        if(Boolean) {
+          this.$router.push({path: '/dashboard'})
+        }
+      })
+   }
+  } 
 };
 </script>
 
