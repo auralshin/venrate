@@ -1,6 +1,6 @@
 import CeramicClient from '@ceramicnetwork/http-client'
 import { ThreeIdConnect,  EthereumAuthProvider } from '@3id/connect'
-const API_URL = "https://localhost:7007"
+const API_URL = "https://ceramic-clay.3boxlabs.com"
 const ceramic = new CeramicClient(API_URL)
 
 import KeyDidResolver from 'key-did-resolver'
