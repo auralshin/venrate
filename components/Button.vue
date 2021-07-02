@@ -5,21 +5,28 @@
 </template>
 
 <script>
+import {mapState} from "vuex";
 export default {
-    methods: {
+  methods: {
     async auth() {
-     this.$store.commit('initialiseStore')
-     this.$store
-      .dispatch("ceramicAuth")
-      .then((Boolean) => {
-        if(Boolean) {
-          console.log(Boolean);
-          this.$router.push({path: '/dashboard'})
-        }
-      })
-   }
-  } 
-}
+      this.$store.commit("initialiseStore");
+      this.$store
+        .dispatch("ceramicAuth")
+        .then(Boolean => {
+          if (Boolean) {
+            console.log(Boolean);
+            this.$router.push({ path: "/dashboard" });
+          }
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    }
+  },
+  computed: {
+    ...mapState(["did", "ethaddress", "profile", "authenticated"])
+  }
+};
 </script>
 <style scoped>
 .button-two {
@@ -37,7 +44,6 @@ export default {
   position: relative;
   transition: 0.5s;
   font-family: "Montserrat", sans-serif;
-
 }
 .button-two span:after {
   content: "»";

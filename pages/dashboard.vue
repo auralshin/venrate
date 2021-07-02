@@ -11,7 +11,7 @@
           <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
         </div>
         <div class="card_title title-white">
-          <p>DID :</p>
+          <p>DID :{{did}}</p>
         </div>
       </div>
 
@@ -22,7 +22,7 @@
           />
         </div>
         <div class="card_title text-black">
-          <p>EthAddress :</p>
+          <p>EthAddress :{{ethaddress}}</p>
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState, mapGetters } from "vuex";
 export default {
   data() {
     return {
@@ -83,7 +83,8 @@ export default {
     }
   },
   computed: {
-    ...mapState(["did", "ethaddress", "profile"])
+    ...mapState(["did", "ethaddress", "profile"]),
+    ...mapGetters(["did"])
   }
 };
 </script>
@@ -123,7 +124,7 @@ export default {
   text-shadow: 5px 5px 20px rgba(92, 88, 88, 0.25);
   background-clip: text;
   text-transform: uppercase;
-  font-size: clamp(60px,5vw,80px);
+  font-size: clamp(60px, 5vw, 80px);
   font-family: "Poppins", sans-serif;
   -webkit-text-fill-color: transparent;
 }

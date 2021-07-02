@@ -12,6 +12,7 @@
     "@3id/connect": "^0.1.6",
     "@ceramicnetwork/3id-did-resolver": "^1.2.7",
     "@ceramicnetwork/http-client": "^1.0.7",
+    "@ceramicstudio/idx": "^0.12.1",
     "@nuxtjs/apollo": "^4.0.1-rc.5",
     "core-js": "^3.9.1",
     "dids": "^2.2.0",
