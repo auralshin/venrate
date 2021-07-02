@@ -84,9 +84,9 @@
                 </v-icon>
               </v-btn>
             </div>
-            <v-btn class="button" @click="auth">
+            <div class="button">
               <Button />
-            </v-btn>
+            </div>
           </v-card>
         </div>
       </v-col>
@@ -110,6 +110,7 @@ export default {
      this.$store
       .dispatch("ceramicAuth")
       .then((Boolean) => {
+        console.log(Boolean);
         if(Boolean) {
           this.$router.push({path: '/dashboard'})
         }

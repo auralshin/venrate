@@ -1,9 +1,26 @@
 <template>
-  <button  class="button-two">
+  <button @click="auth" class="button-two">
     <span>Connect Wallet</span>
   </button>
 </template>
 
+<script>
+export default {
+    methods: {
+    async auth() {
+     this.$store.commit('initialiseStore')
+     this.$store
+      .dispatch("ceramicAuth")
+      .then((Boolean) => {
+        if(Boolean) {
+          console.log(Boolean);
+          this.$router.push({path: '/dashboard'})
+        }
+      })
+   }
+  } 
+}
+</script>
 <style scoped>
 .button-two {
   border-radius: 4px;
