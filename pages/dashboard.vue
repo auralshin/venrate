@@ -163,7 +163,7 @@ export default {
   border-radius: 0px 0px 40px 40px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 16px;
   margin-top: -110px;
   height: 40px;
 }

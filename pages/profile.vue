@@ -13,7 +13,7 @@
             </v-avatar>
           </div>
           <div class="profile-meta">
-            <span class="profile-name">Aayush kumar</span>
+            <span class="profile-name">Anshul Rai</span>
             <span class="profile-title">Full Stack Developer</span>
             <br />
 
@@ -23,10 +23,9 @@
             <span class="profile-dob">13-Nov-2000</span>
             <br />
             <span class="profile-bio">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
-              vitae! Consectetur cum illo voluptas! Sapiente, error cumque omnis
-              hic ad iure. Odit, vero repellendus. Fuga totam nesciunt animi
-              voluptas iste!
+              Hey, I am a blockchain developer. Here's my Venrate profile. 
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, nobis? 
+              Illum similique corporis voluptatum rem quos expedita asperiores iusto, 
             </span>
             <!-- </div> -->
           </div>

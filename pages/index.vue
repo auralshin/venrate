@@ -64,9 +64,9 @@
             outlined
             class="column-right--card"
           >
-            <h1 class="name">AAYUSH KUMAR</h1>
+            <h1 class="name">Anshul Rai</h1>
             <h1 class="occupation">Student</h1>
-            <h1 class="rep"><b>Reputation</b> : 88/100</h1>
+            <h1 class="rep"><b>Reputation</b> : 8.8/10</h1>
             <div class="icons">
               <v-btn class="icons-btn" fab elevation="5">
                 <v-icon size="30">
